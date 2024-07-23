@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Balance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container margin-top margin-bottom">
+        <div class="box">
+            <h1>MASUK</h1>
+            <hr>
+            <p class="small">Apabila Anda memiliki akun, Masuk dengan alamat email.</p>
+
+            <form id="loginForm">
+                <div class="flex-col margin-top">
+                    <label for="email">Alamat Email <span class="required-asterisk" id="emailAsterisk">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="Masukkan alamat email Anda" required><br>
+                </div>
+
+                <div class="flex-col">
+                    <label for="password">Kata Sandi <span class="required-asterisk"
+                            id="passwordAsterisk">*</span></label>
+                    <input type="password" id="password" name="password" placeholder="Masukkan kata sandi Anda"
+                        required><br>
+                </div>
+
+                <div style="margin-left: 20px;" class="margin-bottom">
+                    <ul class="red" id="login-error">
+
+                    </ul>
+                </div>
+
+                <button type="submit">MASUK</button>
+            </form>
+            <div class="link">
+                <a href="https://google.com">Lupa kata sandi?</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h1>BUAT AKUN</h1>
+            <hr>
+
+            <p class="small">Buat Akun dan dapatkan banyak keuntungan: Pembayaran lebih cepat, Menyimpan lebih banyak
+                alamat, lacak pesanan Anda dan banyak lagi!</p>
+
+            <form id="registerForm">
+                <div class="flex-col margin-top margin-bottom">
+                    <label for="firstName">Nama Depan <span class="required-asterisk"
+                            id="firstNameAsterisk">*</span></label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Masukkan nama depan Anda" required>
+                </div>
+
+                <div class="flex-col margin-bottom">
+                    <label for="lastName">Nama Belakang <span class="required-asterisk"
+                            id="lastNameAsterisk">*</span></label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Masukkan nama belakang Anda" required>
+                </div>
+
+                <div class="flex-col margin-bottom">
+                    <label for="birthDate">Tanggal Lahir <span class="required-asterisk"
+                            id="birthDateAsterisk">*</span></label>
+                    <input type="date" id="birthDate" name="birthDate" required>
+                </div>
+
+                <div class="flex-col margin-bottom">
+                    <label for="gender">Jenis Kelamin <span class="required-asterisk"
+                            id="genderAsterisk">*</span></label>
+                    <select id="gender" name="gender" required>
+                        <option value="pria">Pria</option>
+                        <option value="wanita">Wanita</option>
+                    </select>
+                </div>
+
+                <div class="flex-col margin-bottom">
+                    <label for="phone">Nomor Telepon <span class="required-asterisk" id="phoneAsterisk">*</span></label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="flex-col margin-bottom">
+                    <label for="emailNew">Alamat Email <span class="required-asterisk"
+                            id="emailNewAsterisk">*</span></label>
+                    <input type="email" id="emailNew" name="emailNew" required>
+                </div>
+
+                <div class="flex-col margin-bottom">
+                    <label for="newPassword">Kata Sandi <span class="required-asterisk"
+                            id="newPasswordAsterisk">*</span></label>
+                    <input type="password" id="newPassword" name="newPassword" required>
+                </div>
+
+                <div class="flex-col margin-bottom">
+                    <label for="confirmPassword">Konfirmasi Kata Sandi <span class="required-asterisk"
+                            id="confirmPasswordAsterisk">*</span></label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+
+                <div class="flex margin-bottom">
+                    <input class="checkbox" type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter" class="margin-left">Berlangganan Newsletter</label>
+                </div>
+
+                <div style="margin-left: 20px;" class="margin-bottom">
+                    <ul class="red" id="register-error">
+
+                    </ul>
+                </div>
+
+                <button type="submit">DAFTAR</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap';
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex {
+    display: flex;
+}
+
+.margin-left {
+    margin-left: 3px;
+}
+
+.box {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 20px;
+    height: fit-content;
+}
+
+button {
+    padding: 15px;
+    width: 100%;
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: white;
+    color: red;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.margin-top {
+    margin-top: 20px;
+}
+
+.margin-bottom {
+    margin-bottom: 20px;
+}
+
+.small {
+    font-size: 14px;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+input {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.link>a {
+    font-size: 14px;
+    color: grey;
+    text-decoration: none;
+}
+
+select {
+    padding: 10px;
+}
+
+.required-asterisk {
+    color: red;
+    margin-left: 5px;
+}
+
+.checkbox {
+    width: 30px;
+}
+
+.red {
+    color: red;
+}
